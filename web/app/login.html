@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSRF DEMO</title>
+    <link rel="shortcut icon" href="fonts/favicon.ico">
+    <!-- build:css css/login.css -->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1 name='loginTitle'></h1>
+            <form class="form" method="post" name="loginForm">
+                <input type="hidden" name="_csrf" id="_csrf" />
+                <input type="text" placeholder="USERNAME" name="username" id="username" maxlength="25" />
+                <input type="password" placeholder="PASSWORD" name="password" id="password" autocomplete="off" />
+                <div name="loginStatus"></div>
+                <br/>
+                <button type="text" name="loginBtn" id="loginBtn">Login</button>
+            </form>
+        </div>
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- build:js js/login.js -->
+    <!-- bower:js -->
+    <!-- endinject -->
+    <script src="js/login.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
