@@ -40,6 +40,7 @@ public class CsrfDemoSecurityConfiguration{
             http
                 .formLogin()
                 .loginPage("/auth/login.html").permitAll()
+                .defaultSuccessUrl("/auth/index.html")
                 .failureUrl("/auth/login.html?error");
         }
         protected void logout(HttpSecurity http) throws Exception {
