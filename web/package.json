@@ -12,7 +12,7 @@
         "main-bower-files": "~2.9.0",
         "gulp-inject": "~3.0.0",
         "gulp-stylus": "~2.1.0",
-        "event-stream": "~3.3.2",
+        "event-stream": "3.3.4",
         "run-sequence": "~1.1.4",
         "gulp-clean": "~0.3.1"
     }
